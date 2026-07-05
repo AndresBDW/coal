@@ -43,6 +43,7 @@ here is the list of formats that coal supports
 |  --firefox                          |  Firefox                               |
 |  --iterm                            |  iTerm2 (MacOS)                        |
 |  --openbox                          |  OpenBox (wm)                          |
+|  --okpal                            |  Okpal                                 |
 |                                     |                                        |
 +-------------------------------------+----------------------------------------+
 

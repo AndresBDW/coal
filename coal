@@ -164,9 +164,23 @@ window.inactive.border.color:       ${c[7]}"
 
 # }}}
 
+# Okpal {{{
+
+okpal() {
+    local colors_no_hash=("${c[@]//#/}")
+
+    printf "background=%s\n" "${colors_no_hash[0]}"
+    printf "foreground=%s\n" "${colors_no_hash[7]}"
+    printf "cursor=%s\n"     "${colors_no_hash[7]}"
+
+    local num=0
+    for col in "${colors_no_hash[@]}"; do
+        printf "color%02d=%s\n" "$num" "$col"
+        ((num++))
+    done
+}
 
 # }}}
-
 
 # Args {{{
 
@@ -185,6 +199,7 @@ while [[ "$1" ]]; do
         --firefox) firefox ;;
         --iterm) iterm ;;
         --openbox) openbox "${2//--*}" "${3//--*}" ;;
+		--okpal) okpal ;;
     esac
 
     shift

@@ -44,6 +44,7 @@ here is the list of formats that coal supports
 |  --iterm                            |  iTerm2 (MacOS)                        |
 |  --openbox                          |  OpenBox (wm)                          |
 |  --okpal                            |  Okpal                                 |
+|  --st                               |  st (simple terminal)                  |
 |                                     |                                        |
 +-------------------------------------+----------------------------------------+
 
